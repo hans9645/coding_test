@@ -30,7 +30,7 @@ int main(void){
         }else if(op=='B'){
             if (cursor != L.begin()){
                 cursor--;
-                cursor = L.erase(cursor);
+                cursor = L.erase(cursor); //erase는 삭제된 후 cursor의 주소를 반환한다. 따라서 iterator에 저장해두지 않으면 원래 커서는 길을 잃는다.
             }
         }else{
             cin >> temp;
