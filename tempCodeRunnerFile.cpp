@@ -13,10 +13,10 @@ int main(void)
     deque<int> D;
     int N;
     int temp;
+    string s;
 
     cin>>N;
     for(int i=0; i<N;i++){
-        string s;
         cin>>s;
         if(s=="push_front"){
             cin>>temp;
@@ -28,46 +28,46 @@ int main(void)
         }
         else if(s=="pop_front"){
             if(D.empty()){
-                cout<< -1 << '/n';
+                cout << -1 << endl;
             }else{
-                cout << D.front() << '/n';
+                cout << D.front() << endl;
                 D.pop_front();
             }
         }
         else if(s=="pop_back"){
             if (D.empty())
             {
-                cout << -1 << '/n';
+                cout << -1 <<endl;
             }
             else
             {
-                cout << D.back() << '/n';
+                cout << D.back() << endl;
                 D.pop_back();
             }
         }
         else if(s=="size"){
-            cout << D.size() << '/n';
+            cout << D.size() << endl;
         }
         else if(s=="empty"){
-            cout << D.empty() << '/n';
+            cout << D.empty() << endl;
         }
         else if(s=="front"){
             if (D.empty())
             {
-                cout << -1 << '/n';
+                cout << -1 << endl;
             }
             else{
-                cout << D.front() << '/n';
+                cout << D.front() << endl;
             }
         }
         else{//back
             if (D.empty())
             {
-                cout << -1 << '/n';
+                cout << -1 << endl;
             }
             else
             {
-                cout << D.back() << '/n';
+                cout << D.back() << endl;
             }
         }
     }
